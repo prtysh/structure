@@ -10,7 +10,6 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
-  height: 100vh;
   overflow: hidden;
   color: var(--main-fg-color);
   background-color: var(--main-bg-color);
@@ -39,7 +38,6 @@ body {
   align-items: space-evenly;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  /* background-color: var(--pop-color-2); */
 }
 .credits, .header {
   padding: 1rem;
@@ -92,27 +90,4 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 40px;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-}
-
-.contact {
-  padding: 20px;
-  text-align: right;
-}
-
-a {
-  color: var(--pop-color-3);
-}
-
-.menu {
-  grid-column: 1;
-}
-
-input[type=text] {
-  padding: 6px;
-  font-size: 17px;
 }
