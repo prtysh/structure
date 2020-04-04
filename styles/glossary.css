@@ -1,15 +1,24 @@
+:root {
+  --main-bg-color: #1b212f;
+  --main-fg-color: #ffffff;
+  --pop-color-1: #f87521;
+  --pop-color-2: #112a62;
+  --pop-color-3: #eed3c5;
+  background-color:var(--main-bg-color);
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+}
+
 .container {
   display: grid;
-  /* grid-template-columns:1fr 2fr 1fr 3fr 1fr;  */
-  /* grid-template-rows: repeat(4, 200px); */
   grid-gap: 1rem;
   border-style: none;
   background: none;
 }
 
 .container > div{
-  background-color:#f1f1f1;
-  color:#101F31 ;
+  background-color:var(--main-fg-color);
+  color:var(--main-bg-color);
   overflow: hidden;
   padding: 3px;
   font-size: 16px; 
@@ -17,12 +26,12 @@
 }
 
 .container > div:nth-child(odd) {
-  background-color: #888C91;
+  background-color: var(--pop-color-1);
 }
 
 div .item:hover{
-  background-color: black;
-  color: #888C91; 
+  background-color: var(--main-bg-color);
+  color: var(--pop-color-1); 
   font-size: 30px;
   transition: 0.3s;
 }
