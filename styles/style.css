@@ -53,8 +53,8 @@ body {
 .credits, .header, .summary {
   height: 100%;
   padding: 1rem;
-  align-content: center;
-  align-items: center;
+  align-content: top;
+  align-items: top;
   justify-content: center;
 }
 
