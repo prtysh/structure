@@ -42,7 +42,7 @@ body {
 .box1{
   /* grid-template-rows: 3fr 3fr 1fr; */
   background-color: var(--pop-color-1);
-  font-size: 6vh;
+  font-size: 4vh;
 }
 
 .box2{
