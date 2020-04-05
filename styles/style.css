@@ -42,6 +42,7 @@ body {
 .box1{
   background-color: var(--pop-color-1);
   font-size: 4vh;
+  margin: 1rem;
 }
 
 .box2{
