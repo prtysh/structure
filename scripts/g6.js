@@ -72,7 +72,7 @@ const graph = new G6.Graph({
     preventOverlap: true,  // Prevent node overlappings
     nodeStrength: -50,
     edgeStrength: 0.8,
-    nodeSize: 100, // The size of nodes for collide detection. Since we have assigned sizes for each node to their data in last chapter, the nodeSize here is not required any more.
+    nodeSize: 200, // The size of nodes for collide detection. Since we have assigned sizes for each node to their data in last chapter, the nodeSize here is not required any more.
   },
   nodeStateStyles: {
     highlight: {

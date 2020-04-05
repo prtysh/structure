@@ -1,15 +1,15 @@
 {
     "nodes": [
-      { "id":   "n1", "label":         "maths", "color": "#ff0000", "size": 50},
-      { "id":   "n2", "label":       "science", "color": "#ff0000", "size": 50},
-      { "id":   "n3", "label":         "space", "color": "#ff0000", "size": 50},
-      { "id":   "n4", "label":  "epistomology", "color": "#ff0000", "size": 50},
-      { "id":   "n5", "label":      "feminism", "color": "#ff0000", "size": 50},
-      { "id":   "n6", "label":    "empiricism", "color": "#ff0000", "size": 50},
-      { "id":   "n7", "label":     "emergence", "color": "#ff0000", "size": 50},
-      { "id":   "n8", "label":      "morality", "color": "#ff0000", "size": 50},
-      { "id":   "n9", "label":    "philosophy", "color": "#ff0000", "size": 50},
-      { "id":  "n10", "label":     "algorithm", "color": "#ff0000", "size": 50}
+      { "id":   "n1", "label":         "maths", "color": "#ff0000", "size": 150},
+      { "id":   "n2", "label":       "science", "color": "#ff0000", "size":  80},
+      { "id":   "n3", "label":         "space", "color": "#ff0000", "size":  90},
+      { "id":   "n4", "label":  "epistomology", "color": "#ff0000", "size":  50},
+      { "id":   "n5", "label":      "feminism", "color": "#ff0000", "size":  50},
+      { "id":   "n6", "label":    "empiricism", "color": "#ff0000", "size":  60},
+      { "id":   "n7", "label":     "emergence", "color": "#ff0000", "size": 110},
+      { "id":   "n8", "label":      "morality", "color": "#ff0000", "size": 100},
+      { "id":   "n9", "label":    "philosophy", "color": "#ff0000", "size":  80},
+      { "id":  "n10", "label":     "algorithm", "color": "#ff0000", "size":  50}
     ],
     "edges": [
       { "source":   "n1",  "target":   "n2",  "label": "article", "curveOffset": 20, "color": "#000000", "link": "https://onlinelibrary.wiley.com/doi/" },
