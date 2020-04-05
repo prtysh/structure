@@ -7,6 +7,14 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
+.box1 { grid-area: x1; }
+.box2{ grid-area: x2; }
+.nestbox1 { grid-area: x3; }
+.nestbox2 { grid-area: x4; }
+.nestbox3 { grid-area: x5; }
+.nestbox4 { grid-area: x6; }
+.nestbox5 { grid-area: x7; }
+
 body {
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
@@ -17,7 +25,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-areas:
+    'x1 x3 x4 x5 x6'
+    'x2 x2 x2 x2 x7';
   padding: 1rem;
   grid-gap: 1rem;
   border-style: none;
@@ -27,19 +38,18 @@ body {
 }
 
 .box1{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 3fr 3fr 1fr; */
   background-color: var(--pop-color-1);
 }
 
 .box2{
-  display: grid;
   justify-items: space-evenly;
   align-items: space-evenly;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 2fr 3fr;
+  grid-template-columns: 3fr 2fr; */
 }
-.credits, .header {
+.credits, .header, .summary {
+  height: 100%;
   padding: 1rem;
   align-content: center;
   align-items: center;
@@ -50,7 +60,9 @@ body {
   background-color: var(--main-bg-color);
   color: var(--pop-color-1);
 }
-
+.summary {
+  color: var(--pop-color-1);
+}
 .homebutton{
   font-family: 'IBM Plex Mono', monospace;
   width:80%;
