@@ -47,9 +47,9 @@ Particle.prototype.update = function(){
 };
 
 Particle.prototype.display = function() {
-    stroke(102,102,102, this.lifespan);
+    stroke(248, 117, 33, this.lifespan);
     strokeWeight(2);
-    fill(102,102,102, this.lifespan);
+    fill(248, 117, 33, this.lifespan);
     rect(this.position.x, this.position.y, this.radius, this.radius);
 };
 
