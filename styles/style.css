@@ -8,7 +8,8 @@
 }
 
 .box1 { grid-area: x1; }
-.box2{ grid-area: x2; }
+.box2 { grid-area: x2; }
+.space{ grid-area: x0; }
 .nestbox1 { grid-area: x3; }
 .nestbox2 { grid-area: x4; }
 .nestbox3 { grid-area: x5; }
