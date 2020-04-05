@@ -1,6 +1,6 @@
 let strokeBubble = '#f87521';
 let fillBubble = '#f87521';
-let strokeEdge = '#000000';
+let strokeEdge = '#1b212f';
 
 console.log(window.innerWidth);
 console.log(window.innerHeight);
