@@ -1,6 +1,6 @@
-let strokeBubble = '#f87521';
+let strokeBubble = '#ff0000';
 let fillBubble = '#f87521';
-let strokeEdge = '#1b212f';
+let strokeEdge = '#ffbf80';
 
 console.log(window.innerWidth);
 console.log(window.innerHeight);
@@ -42,15 +42,16 @@ const graph = new G6.Graph({
     labelCfg: {
       style: {
         fontSize: 18,
-        fill: fillBubble,
+        fill: "#ffffff",
+        opacity: 0.5,
         stroke: strokeBubble,
       },
-      position: "bottom",
+      // position: "bottom",
     },
   },
   defaultEdge: {
     type: 'arc', // assign the edges to be quadratic bezier curves
-    size: 5,
+    size: 2,
     label: '',
     labelCfg: {
       style: {
@@ -63,16 +64,17 @@ const graph = new G6.Graph({
     },
   },
   layout: {                // Object, layout configuration. random by default
-    type: 'force',
+    type: 'random',
     center: [window.innerWidth/2,window.innerHeight/2],
-    speed: 0, 
-    clustering: true,
-    clusterGravity: 100,
+    workerEnabled: true,
+    // speed: 0, 
+    // clustering: true,
+    // clusterGravity: 100,
     // linkDistance: 600,
-    preventOverlap: true,  // Prevent node overlappings
-    nodeStrength: -50,
-    edgeStrength: 0.8,
-    nodeSize: 200, // The size of nodes for collide detection. Since we have assigned sizes for each node to their data in last chapter, the nodeSize here is not required any more.
+    // preventOverlap: true,  // Prevent node overlappings
+    // nodeStrength: -50,
+    // edgeStrength: 0.8,
+    // nodeSize: 200, // The size of nodes for collide detection. Since we have assigned sizes for each node to their data in last chapter, the nodeSize here is not required any more.
   },
   nodeStateStyles: {
     highlight: {
