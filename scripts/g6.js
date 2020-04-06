@@ -88,7 +88,7 @@ const graph = new G6.Graph({
     highlight: {
       stroke: strokeBubble,
       opacity: 0.5,
-      lineWidth: 8,
+      lineWidth: 3,
     },
     dark: {
       opacity: 0.2,
