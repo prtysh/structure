@@ -64,7 +64,7 @@ body {
 }
 .summary {
   color: var(--pop-color-1);
-  font-size: 20;
+  font-size: 28px;
 }
 .homebutton{
   font-family: 'IBM Plex Mono', monospace;
