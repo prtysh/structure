@@ -9,46 +9,72 @@ const graph = new G6.Graph({
   container: mountNode,
   width: window.innerWidth,
   height: window.innerHeight,
+  // width,
+  // height,
+  // fitView: true,
+  // fitViewPadding: 20,
   modes: {
     default: [
-      'drag-canvas',
-      'animate',
-      'zoom-canvas',
-      'minZoom : 0.6',
-      'maxZoom: 1.2',
       {
         type: 'tooltip',
         formatText: function formatText(model) {
-          return model.name;
+          return model.label;
         },
       },
-      'activate-relations',
+      {
+        type: 'edge-tooltip',
+        formatText: function formatText(model, e) {
+          const edge = e.item;
+          return (
+            edge.getSource().getModel().label + " + " +
+            edge.getTarget().getModel().label
+          );
+        },
+      },
     ],
   },
   defaultNode: {
+    // size: 100,
     style: {
-      // fill: fillBubble,
-      // stroke: strokeBubble,
+      fill: fillBubble,
+      stroke: strokeBubble,
+    },
+    labelCfg: {
+      style: {
+        fontSize: 18,
+        fill: "#ffffff",
+        opacity: 0.5,
+        stroke: strokeBubble,
+      },
+      // position: "bottom",
     },
   },
   defaultEdge: {
     type: 'arc', // assign the edges to be quadratic bezier curves
     size: 2,
     label: '',
+    labelCfg: {
+      style: {
+        opacity:0, 
+      },
+    },
     style: {
       stroke: strokeEdge,
       opacity: 0.5,
     },
   },
   layout: {                // Object, layout configuration. random by default
-    type: 'force',
-    center: [window.innerWidth / 2, window.innerHeight / 2],
+    type: 'random',
+    center: [window.innerWidth/2,window.innerHeight/2],
     workerEnabled: true,
-    preventOverlap: true, // Prevent node overlappings
-    // nodeStrength: -20,
-    collideStrength: 0.7,
-    linkDistance: 50,
-    nodeSpacing: 10,
+    // speed: 0, 
+    // clustering: true,
+    // clusterGravity: 100,
+    // linkDistance: 600,
+    // preventOverlap: true,  // Prevent node overlappings
+    // nodeStrength: -50,
+    // edgeStrength: 0.8,
+    // nodeSize: 200, // The size of nodes for collide detection. Since we have assigned sizes for each node to their data in last chapter, the nodeSize here is not required any more.
   },
   nodeStateStyles: {
     highlight: {
@@ -101,12 +127,15 @@ function refreshDragedNodePosition(e) {
   model.fy = e.y;
 }
 
-// graph.on('edge:click', ev => {
-//   window.open(ev.item._cfg.model.link)
-// });
+graph.on('edge:click', ev => {
+  window.open(ev.item._cfg.model.link)
+});
 
 graph.on('edge:mouseenter', evt => {
+  document.body.style.cursor = "pointer";
   const item = evt.item;
+  // console.log(item._cfg.styles);
+  // item._cfg.styles;
   // graph.setAutoPaint(false);
   // graph.clearItemStates(item);
   graph.setItemState(item, 'highlight', true);
@@ -154,47 +183,3 @@ function clearAllStats() {
   graph.paint();
   graph.setAutoPaint(true);
 }
-
-function handleNodeClick(event) {
-  const item = event.item;
-  if (item.getModel().class == "tag") {
-    const matrix = item.get('group').getMatrix();
-    const point = {
-      x: matrix[6],
-      y: matrix[7],
-    };
-    const w = graph.get('width');
-    const h = graph.get('height');
-    const viewCenter = {
-      x: w / 2,
-      y: h / 2,
-    };
-    const modelCenter = graph.getPointByCanvas(viewCenter.x, viewCenter.y);
-    let viewportMatrix = graph.get('group').getMatrix();
-    if (!viewportMatrix) viewportMatrix = G6.Util.mat3.create();
-    const dx = (modelCenter.x - point.x) * viewportMatrix[0];
-    const dy = (modelCenter.y - point.y) * viewportMatrix[4];
-    let lastX = 0;
-    let lastY = 0;
-    let newX = void 0;
-    let newY = void 0;
-    graph.get('canvas').animate(
-      ratio => {
-        newX = dx * ratio;
-        newY = dy * ratio;
-        graph.translate(newX - lastX, newY - lastY);
-        lastX = newX;
-        lastY = newY;
-      },
-      {
-        duration: 900,
-        easing: 'easeCubic',
-      },
-    );
-  }
-  if (item.getModel().class == "link") {
-    window.open(item.getModel().name)
-  }
-}
-
-graph.on('node:click', handleNodeClick);
