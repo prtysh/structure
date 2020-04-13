@@ -49,6 +49,11 @@ body {
   justify-items: space-evenly;
   align-items: space-evenly;
 }
+
+p{
+  font-family: 'Roboto', sans-serif;
+} 
+
 .credits, .header, .summary {
   height: 100%;
   padding: 1rem;

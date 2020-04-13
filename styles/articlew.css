@@ -51,6 +51,8 @@ body {
   align-items: space-evenly;
   margin: 1rem;
   overflow: scroll;
+  font-family: 'Roboto', sans-serif;
+  font-weight: light;
 }
 .credits, .header, .summary {
   height: 100%;
