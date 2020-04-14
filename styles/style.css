@@ -109,6 +109,12 @@ body, html{
   body, html{
     overflow: scroll;
   }
+  .nestbox1 { grid-area: n1; width :  100%;}
+  .nestbox2 { grid-area: n2;}
+  .nestbox3 { grid-area: n3;}
+  .nestbox4 { grid-area: n4;}
+  .nestbox5 { grid-area: n5;}
+
   .container {
     height: 100%;
     display: grid;
@@ -124,10 +130,24 @@ body, html{
     grid-template-rows: 1fr 1fr;
   }
   .container_right{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* justify-items: end; */
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-areas: 
+      "n1"
+      "n2"
+      "n3"
+      "n4"
+      "n5"; */
   }
   .homebutton{
     height: 100%;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
