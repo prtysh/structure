@@ -124,8 +124,8 @@ body, html{
     grid-template-rows: 1fr 1fr;
   }
   .container_right{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   .homebutton{
     height: 100%;
