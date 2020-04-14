@@ -1,16 +1,17 @@
 :root {
   --main-bg-color: #1b212f;
   --main-fg-color: #ffffff;
-  --pop-color-1: #f87521;
+  --pop-color-1: #ffef00;
   --pop-color-2: #112a62;
   --pop-color-3: #eed3c5;
-  font-family: 'IBM Plex Mono', monospace;
+  /* font-family: 'IBM Plex Mono', monospace; */
   color: white;
 }
 
 body, html{
   height: 100%;
   overflow: hidden;
+  background-color: var(--main-bg-color);
 }
 .container_left{grid-area: xleft;}
 .container_right{grid-area: xright;}
@@ -38,7 +39,10 @@ body, html{
 }
 .header {
   background-color: var(--pop-color-1);
+  color: var(--main-bg-color);
   padding: 1rem;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 700;
 }
 .trial {
   background-color: none;
@@ -50,20 +54,17 @@ body, html{
 }
 
 .container_bottom{
-  /* border-top-style: solid; */
-  /* border-top-color: var(--pop-color-1); */
   padding: 1rem;
   font-size: 2rem;
   background-color: var(--pop-color-1);
-  /* border-top-style: solid; */
-  /* border-left-style: solid; */
-  /* border-color: var(--pop-color-1); */
-  /* color: var(--main-fg-color); */
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 500;
   color: var(--main-bg-color);
 }
 
 .homebutton{ 
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 500;
   background-color: transparent; 
   padding: 1em;
   width: 100%;
