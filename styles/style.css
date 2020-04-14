@@ -38,6 +38,10 @@ body, html{
   font-size: 1.2rem;
 }
 .header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: var(--pop-color-1);
   color: var(--main-bg-color);
   padding: 1rem;
@@ -54,6 +58,10 @@ body, html{
 }
 
 .container_bottom{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   font-size: 2rem;
   /* background-color: var(--pop-color-1); */
@@ -68,7 +76,6 @@ body, html{
   padding: 1rem;
   font-size: 2rem;
   background-color: var(--pop-color-1);
-  /* background-color: var(--main-fg-color); */
   text-align: center;
   justify-content: center;
   align-items: center;
