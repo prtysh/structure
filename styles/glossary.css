@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #1b212f;
   --main-fg-color: #ffffff;
-  --pop-color-1: #f87521;
+  --pop-color-1: #ffef00;
   --pop-color-2: #112a62;
   --pop-color-3: #eed3c5;
   background-color:var(--main-bg-color);
@@ -20,6 +20,8 @@
   background-color:var(--main-fg-color);
   color:var(--main-bg-color);
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding: 3px;
   font-size: 16px; 
   height: 200px;
@@ -32,6 +34,7 @@
 div .item:hover{
   background-color: var(--main-bg-color);
   color: var(--pop-color-1); 
+  font-family: 'Roboto Slab', serif;
   font-size: 30px;
   transition: 0.3s;
 }

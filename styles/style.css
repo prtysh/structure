@@ -1,10 +1,9 @@
 :root {
   --main-bg-color: #1b212f;
   --main-fg-color: #ffffff;
-  --pop-color-1: #ffef00;
+  --pop-color-1: #f8b800;
   --pop-color-2: #112a62;
   --pop-color-3: #eed3c5;
-  /* font-family: 'IBM Plex Mono', monospace; */
   color: white;
 }
 
@@ -16,15 +15,16 @@ body, html{
 .container_left{grid-area: xleft;}
 .container_right{grid-area: xright;}
 .container_bottom{grid-area: xbot;}
-
+.about {grid-area: xabout;}
 .container {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.4fr;
   grid-template-columns: 25% auto;
   grid-template-areas: 
     "xleft xright"
-    "xleft xbot";
+    "xleft xbot"
+    "xabout xabout";
 }
 /* .container_left, .container_right, .container_bottom { */
   /* border-style: dotted; */
@@ -56,9 +56,25 @@ body, html{
 .container_bottom{
   padding: 1rem;
   font-size: 2rem;
-  background-color: var(--pop-color-1);
+  /* background-color: var(--pop-color-1); */
+  background-color: var(--main-fg-color);
   font-family: 'Noto Sans HK', sans-serif;
   font-weight: 500;
+  color: var(--main-bg-color);
+}
+
+.about {
+  display: flex;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--pop-color-1);
+  /* background-color: var(--main-fg-color); */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   color: var(--main-bg-color);
 }
 
