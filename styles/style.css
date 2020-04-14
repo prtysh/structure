@@ -147,6 +147,6 @@ body, html{
   }
   .homebutton{
     height: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 }
