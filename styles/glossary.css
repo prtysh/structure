@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: #1b212f;
   --main-fg-color: #ffffff;
-  --pop-color-1: #ffef00;
+  --pop-color-1: #f8b800;
+  /* --pop-color-1: #ffef00; */
   --pop-color-2: #112a62;
   --pop-color-3: #eed3c5;
   background-color:var(--main-bg-color);

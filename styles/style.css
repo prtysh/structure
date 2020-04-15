@@ -17,6 +17,7 @@ body, html{
 .container_bottom{grid-area: xbot;}
 .about {grid-area: xabout;}
 .container {
+  margin: 0rem 1rem 1rem 0rem;
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr 0.15fr;
