@@ -48,6 +48,9 @@ div .item:hover{
     height: 200px;
     font-size: 24px;
   }
+  p {
+    font-size: 24px;
+  }
 }
 
 button {
