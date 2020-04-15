@@ -19,7 +19,7 @@ body, html{
 .container {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr 0.4fr;
+  grid-template-rows: 1fr 1fr 0.15fr;
   grid-template-columns: 25% auto;
   grid-template-areas: 
     "xleft xright"
