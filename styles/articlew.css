@@ -128,6 +128,8 @@ a:active {
     'x7 x2'; 
   }
   .homebutton{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: 500;
     font-size: 28px;
     width:100%;
     height:100%;
@@ -137,6 +139,8 @@ a:active {
     font-size: 26px;
   }
   .header{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: 500;
     font-size: 24px;
   }
 }
