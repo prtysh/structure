@@ -129,7 +129,7 @@ body, html{
   }
   .container_left {
     grid-template-rows: 1fr 1fr;
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .container_right{
     /* justify-items: end; */
