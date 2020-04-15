@@ -116,6 +116,7 @@ a:active {
 
 @media screen and (max-width: 1100px) {
   .container{
+    grid-gap: 0rem;
     grid-template-columns: 38.2% auto;
     grid-template-areas:
     'x1 x2'
@@ -132,7 +133,7 @@ a:active {
     margin: none;
   }
   .box2{
-    font-size: 18px;
+    font-size: 22px;
   }
   .header{
     font-size: 24px;
