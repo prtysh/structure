@@ -129,6 +129,7 @@ body, html{
   }
   .container_left {
     grid-template-rows: 1fr 1fr;
+    font-size: 3rem;
   }
   .container_right{
     /* justify-items: end; */
@@ -149,7 +150,7 @@ body, html{
   }
   .homebutton{
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* margin: 1rem; */
   }
 }
