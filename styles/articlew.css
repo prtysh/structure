@@ -125,4 +125,13 @@ a:active {
     'x6 x2' 
     'x7 x2'; 
   }
+  .homebutton{
+    font-size: 24px;
+  }
+  .box2{
+    font-size: 18px;
+  }
+  .header{
+    font-size: 24px;
+  }
 }
