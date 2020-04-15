@@ -45,11 +45,11 @@ div .item:hover{
     grid-template-rows: repeat(4, 250px);
   } 
   .container > div{
-    height: 200px;
+    height: 250px;
     font-size: 24px;
   }
   p {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 
