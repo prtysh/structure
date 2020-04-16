@@ -127,6 +127,11 @@ a:active {
   color: blue;
 } 
 
+.hivos{
+  width:50%;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1100px) {
   .container{
     grid-gap: 0rem;
