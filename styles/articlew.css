@@ -128,12 +128,11 @@ a:active {
 } 
 
 .hivos{
-  width:50%;
-  font-size: 14px;
+  display: flex;
 }
 
-img{
-  width:100%;
+.hivosimg{
+  width:20%;
   height:auto;
 }
 
@@ -165,8 +164,12 @@ img{
     font-size: 21px;
   }
   .hivos{
-    width:100%;
-    font-size: 24px;
+    /* width:100%;
+    font-size: 24px; */
+    display: flex;
+    flex-direction: column;
   }
-
+  .hivosimg{
+    width:40%;
+  }
 }
