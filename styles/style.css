@@ -98,6 +98,7 @@ body, html{
   border: none;
   color: var(--main-fg-color);
   font-size: 1.5rem;
+  white-space: nowrap;
  } 
 
 .homebutton:hover{ 

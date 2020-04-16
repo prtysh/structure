@@ -55,6 +55,7 @@ body {
 .box2{
   justify-items: space-evenly;
   align-items: space-evenly;
+  text-align: left;
   margin: 1rem;
   overflow: scroll;
   font-family: 'Roboto', sans-serif;
@@ -93,6 +94,7 @@ body {
   border: none;
   color: var(--main-fg-color);
   font-size: 22px;
+  white-space: nowrap;
 }
 
 .homebutton:hover{
@@ -101,6 +103,9 @@ body {
   cursor: pointer;
 }
 
+strong{
+  font-size: 26px;
+}
  /* unvisited link */
  a:link {
   color: red;
