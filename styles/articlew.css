@@ -129,7 +129,6 @@ a:active {
 
 .hivos{
   width:50%;
-  /* height: auto; */
   font-size: 14px;
 }
 
@@ -165,4 +164,9 @@ img{
     font-weight: 500;
     font-size: 21px;
   }
+  .hivos{
+    width:100%;
+    font-size: 24px;
+  }
+
 }
