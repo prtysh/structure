@@ -50,6 +50,7 @@ body {
   color: var(--main-bg-color);
   font-size: 2vh;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .box2{
