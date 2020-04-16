@@ -129,9 +129,13 @@ a:active {
 
 .hivos{
   width:50%;
+  /* height: auto; */
   font-size: 14px;
 }
-
+iframe{
+  width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 1100px) {
   .container{
     grid-gap: 0rem;
