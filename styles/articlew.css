@@ -140,6 +140,9 @@ img {
   width:20%;
   height:auto;
 }
+.hivostext{
+  padding: 1rem;
+}
 
 @media screen and (max-width: 1100px) {
   .container{
@@ -176,5 +179,8 @@ img {
   }
   .hivosimg{
     width:40%;
+  }
+  .hivostext{
+    padding: 0rem;
   }
 }
