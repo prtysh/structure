@@ -127,16 +127,18 @@ a:active {
   color: blue;
 } 
 
-.hivos{
-  display: flex;
-}
-
 img {
   width: 100%;
   height: auto;
 }
 
+.hivos{
+  /* display: flex; */
+}
+
 .hivosimg{
+  float: left;
+  padding-right: 1rem;
   width:20%;
   height:auto;
 }
