@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="favico.ico" type="png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500;700&family=Roboto+Slab&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   <title> Relational View </title>
   <style>
     body {
@@ -32,6 +32,10 @@
       height: 8vh;
     }
 
+    .button:hover{
+      cursor: pointer;
+    }
+
     .g6-tooltip {
       border: 1px solid #e2e2e2;
       border-radius: 4px;
@@ -47,6 +51,7 @@
 
 <body>
   <button class="button" onclick="window.location.href = '../index.html';"> HOME</button>
+  <p style="float: left; width: 10%; font-family: 'Roboto', sans-serif; font-size: 12px">The visualisation is best viewed on desktop.</p>
   <div id="mountNode"></div>
   <script src="../scripts/g6.min.js"></script>
   <script src="../scripts/g6.js"></script>

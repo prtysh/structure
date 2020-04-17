@@ -193,7 +193,7 @@ function handleNodeClick(event) {
     );
   }
   if (item.getModel().class == "link") {
-    window.open(item.getModel().link)
+    window.open(item.getModel().name)
   }
   graph.setAutoPaint(false);
   graph.getNodes().forEach(function (node) {
