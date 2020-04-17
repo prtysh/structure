@@ -131,6 +131,11 @@ a:active {
   display: flex;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .hivosimg{
   width:20%;
   height:auto;
